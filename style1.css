@@ -1,0 +1,169 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+body{
+    background-image: url("Catania.jpg");
+    background-size:cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position:right; 
+}
+.navbar {
+    width: 100%;
+    margin: auto;
+    padding: 2% 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 17px ;
+    background: #2271b3;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+    position: relative;
+
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:#fff;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #fff;
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+.content h1{
+    font-size: 120px;
+    margin: 20px auto;
+}
+.content p{
+    font-weight: 100;
+    line-height: 50px;
+    font-size: 40px;
+    margin-top: 120px;
+}
+button{
+    width: 250px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: #0b498b;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.9s;
+}
+button:hover span{
+    width: 100%;
+}
+
+a:link, a:visited {
+    color: #ffff00;
+    font-size: 20px;
+}
+a:hover, a:active {
+    color: #ffff00;
+    font-size: 20px;
+}
+
+.dropbtn {
+    background: #2271b3;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    background: transparent;
+    color: #fff;
+    display: none;
+    position: absolute;
+    min-width: 200px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background: #2271a6;}
+.dropdown:hover .dropdown-content {display: block; background: #2271b6;}
+.dropdown:hover .dropbtn {background: #2271b6;}
+#small-screen{
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+@media screen and (max-width: 1070px){
+    body {
+        background-image: url("Catania.jpg");
+        background-size:cover;
+        background-repeat: repeat;
+        background-attachment: fixed;
+        background-position:right; 
+    }
+    #full-screen{
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    #small-screen{
+        background: #2271b6;
+        width: 42%;
+        position: relatice;
+        top: 15px;
+        left: 58%;
+        font-size: 17px;
+    }
+    .content{
+        margin-top: 60%;
+    }
+    h1{
+        font-family: 'Times New Roman';
+    }
+}
