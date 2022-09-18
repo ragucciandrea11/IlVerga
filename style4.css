@@ -147,18 +147,18 @@ button{
         top: -9999px;
         left: -9999px;
     }
+    #small-screen{
+        background: #2271b6;
+        width: 42%;
+        position: relatice;
+        top: 15px;
+        left: 58%;
+        font-size: 17px;
+    }
     button{
         position: static;
         font-size: 30px;
         color: #000066;
-    }
-    #small-screen{
-        background: #2271b6;
-        width: 40%;
-        position: relative;
-        top: 15px;
-        left: 60%;
-        font-size: 17px;
     }
     .mala{
         width: 80%;
